@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		877C751C14FC6807001E6162 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877C751B14FC6807001E6162 /* UIKit.framework */; };
+		877C751E14FC6807001E6162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877C751D14FC6807001E6162 /* Foundation.framework */; };
+		877C752014FC6807001E6162 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877C751F14FC6807001E6162 /* CoreGraphics.framework */; };
+		877C752214FC6807001E6162 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877C752114FC6807001E6162 /* CoreData.framework */; };
+		877C752814FC6807001E6162 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 877C752614FC6807001E6162 /* InfoPlist.strings */; };
+		877C752A14FC6807001E6162 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 877C752914FC6807001E6162 /* main.m */; };
+		877C752E14FC6807001E6162 /* PKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 877C752D14FC6807001E6162 /* PKAppDelegate.m */; };
+		877C753114FC6807001E6162 /* Pickend.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 877C752F14FC6807001E6162 /* Pickend.xcdatamodeld */; };
+		877C753914FC6807001E6162 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877C753814FC6807001E6162 /* SenTestingKit.framework */; };
+		877C753A14FC6807001E6162 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877C751B14FC6807001E6162 /* UIKit.framework */; };
+		877C753B14FC6807001E6162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877C751D14FC6807001E6162 /* Foundation.framework */; };
+		877C753C14FC6807001E6162 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877C752114FC6807001E6162 /* CoreData.framework */; };
+		877C754414FC6807001E6162 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 877C754214FC6807001E6162 /* InfoPlist.strings */; };
+		877C754714FC6807001E6162 /* PickendTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 877C754614FC6807001E6162 /* PickendTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		877C753D14FC6807001E6162 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 877C750E14FC6807001E6162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 877C751614FC6807001E6162;
+			remoteInfo = Pickend;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		877C751714FC6807001E6162 /* Pickend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickend.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		877C751B14FC6807001E6162 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		877C751D14FC6807001E6162 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		877C751F14FC6807001E6162 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		877C752114FC6807001E6162 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		877C752514FC6807001E6162 /* Pickend-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pickend-Info.plist"; sourceTree = "<group>"; };
+		877C752714FC6807001E6162 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		877C752914FC6807001E6162 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		877C752B14FC6807001E6162 /* Pickend-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pickend-Prefix.pch"; sourceTree = "<group>"; };
+		877C752C14FC6807001E6162 /* PKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKAppDelegate.h; sourceTree = "<group>"; };
+		877C752D14FC6807001E6162 /* PKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKAppDelegate.m; sourceTree = "<group>"; };
+		877C753014FC6807001E6162 /* Pickend.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pickend.xcdatamodel; sourceTree = "<group>"; };
+		877C753714FC6807001E6162 /* PickendTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickendTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		877C753814FC6807001E6162 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		877C754114FC6807001E6162 /* PickendTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PickendTests-Info.plist"; sourceTree = "<group>"; };
+		877C754314FC6807001E6162 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		877C754514FC6807001E6162 /* PickendTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickendTests.h; sourceTree = "<group>"; };
+		877C754614FC6807001E6162 /* PickendTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickendTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		877C751414FC6807001E6162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877C751C14FC6807001E6162 /* UIKit.framework in Frameworks */,
+				877C751E14FC6807001E6162 /* Foundation.framework in Frameworks */,
+				877C752014FC6807001E6162 /* CoreGraphics.framework in Frameworks */,
+				877C752214FC6807001E6162 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		877C753314FC6807001E6162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877C753914FC6807001E6162 /* SenTestingKit.framework in Frameworks */,
+				877C753A14FC6807001E6162 /* UIKit.framework in Frameworks */,
+				877C753B14FC6807001E6162 /* Foundation.framework in Frameworks */,
+				877C753C14FC6807001E6162 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		877C750C14FC6807001E6162 = {
+			isa = PBXGroup;
+			children = (
+				877C752314FC6807001E6162 /* Pickend */,
+				877C753F14FC6807001E6162 /* PickendTests */,
+				877C751A14FC6807001E6162 /* Frameworks */,
+				877C751814FC6807001E6162 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		877C751814FC6807001E6162 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				877C751714FC6807001E6162 /* Pickend.app */,
+				877C753714FC6807001E6162 /* PickendTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		877C751A14FC6807001E6162 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				877C751B14FC6807001E6162 /* UIKit.framework */,
+				877C751D14FC6807001E6162 /* Foundation.framework */,
+				877C751F14FC6807001E6162 /* CoreGraphics.framework */,
+				877C752114FC6807001E6162 /* CoreData.framework */,
+				877C753814FC6807001E6162 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		877C752314FC6807001E6162 /* Pickend */ = {
+			isa = PBXGroup;
+			children = (
+				877C752C14FC6807001E6162 /* PKAppDelegate.h */,
+				877C752D14FC6807001E6162 /* PKAppDelegate.m */,
+				877C752F14FC6807001E6162 /* Pickend.xcdatamodeld */,
+				877C752414FC6807001E6162 /* Supporting Files */,
+			);
+			path = Pickend;
+			sourceTree = "<group>";
+		};
+		877C752414FC6807001E6162 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				877C752514FC6807001E6162 /* Pickend-Info.plist */,
+				877C752614FC6807001E6162 /* InfoPlist.strings */,
+				877C752914FC6807001E6162 /* main.m */,
+				877C752B14FC6807001E6162 /* Pickend-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		877C753F14FC6807001E6162 /* PickendTests */ = {
+			isa = PBXGroup;
+			children = (
+				877C754514FC6807001E6162 /* PickendTests.h */,
+				877C754614FC6807001E6162 /* PickendTests.m */,
+				877C754014FC6807001E6162 /* Supporting Files */,
+			);
+			path = PickendTests;
+			sourceTree = "<group>";
+		};
+		877C754014FC6807001E6162 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				877C754114FC6807001E6162 /* PickendTests-Info.plist */,
+				877C754214FC6807001E6162 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		877C751614FC6807001E6162 /* Pickend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 877C754A14FC6807001E6162 /* Build configuration list for PBXNativeTarget "Pickend" */;
+			buildPhases = (
+				877C751314FC6807001E6162 /* Sources */,
+				877C751414FC6807001E6162 /* Frameworks */,
+				877C751514FC6807001E6162 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pickend;
+			productName = Pickend;
+			productReference = 877C751714FC6807001E6162 /* Pickend.app */;
+			productType = "com.apple.product-type.application";
+		};
+		877C753614FC6807001E6162 /* PickendTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 877C754D14FC6807001E6162 /* Build configuration list for PBXNativeTarget "PickendTests" */;
+			buildPhases = (
+				877C753214FC6807001E6162 /* Sources */,
+				877C753314FC6807001E6162 /* Frameworks */,
+				877C753414FC6807001E6162 /* Resources */,
+				877C753514FC6807001E6162 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				877C753E14FC6807001E6162 /* PBXTargetDependency */,
+			);
+			name = PickendTests;
+			productName = PickendTests;
+			productReference = 877C753714FC6807001E6162 /* PickendTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		877C750E14FC6807001E6162 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 877C751114FC6807001E6162 /* Build configuration list for PBXProject "Pickend" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 877C750C14FC6807001E6162;
+			productRefGroup = 877C751814FC6807001E6162 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				877C751614FC6807001E6162 /* Pickend */,
+				877C753614FC6807001E6162 /* PickendTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		877C751514FC6807001E6162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877C752814FC6807001E6162 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		877C753414FC6807001E6162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877C754414FC6807001E6162 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		877C753514FC6807001E6162 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		877C751314FC6807001E6162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877C752A14FC6807001E6162 /* main.m in Sources */,
+				877C752E14FC6807001E6162 /* PKAppDelegate.m in Sources */,
+				877C753114FC6807001E6162 /* Pickend.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		877C753214FC6807001E6162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877C754714FC6807001E6162 /* PickendTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		877C753E14FC6807001E6162 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 877C751614FC6807001E6162 /* Pickend */;
+			targetProxy = 877C753D14FC6807001E6162 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		877C752614FC6807001E6162 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				877C752714FC6807001E6162 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		877C754214FC6807001E6162 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				877C754314FC6807001E6162 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		877C754814FC6807001E6162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		877C754914FC6807001E6162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		877C754B14FC6807001E6162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pickend/Pickend-Prefix.pch";
+				INFOPLIST_FILE = "Pickend/Pickend-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		877C754C14FC6807001E6162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pickend/Pickend-Prefix.pch";
+				INFOPLIST_FILE = "Pickend/Pickend-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		877C754E14FC6807001E6162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pickend.app/Pickend";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pickend/Pickend-Prefix.pch";
+				INFOPLIST_FILE = "PickendTests/PickendTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		877C754F14FC6807001E6162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pickend.app/Pickend";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pickend/Pickend-Prefix.pch";
+				INFOPLIST_FILE = "PickendTests/PickendTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		877C751114FC6807001E6162 /* Build configuration list for PBXProject "Pickend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				877C754814FC6807001E6162 /* Debug */,
+				877C754914FC6807001E6162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		877C754A14FC6807001E6162 /* Build configuration list for PBXNativeTarget "Pickend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				877C754B14FC6807001E6162 /* Debug */,
+				877C754C14FC6807001E6162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		877C754D14FC6807001E6162 /* Build configuration list for PBXNativeTarget "PickendTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				877C754E14FC6807001E6162 /* Debug */,
+				877C754F14FC6807001E6162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		877C752F14FC6807001E6162 /* Pickend.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				877C753014FC6807001E6162 /* Pickend.xcdatamodel */,
+			);
+			currentVersion = 877C753014FC6807001E6162 /* Pickend.xcdatamodel */;
+			path = Pickend.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 877C750E14FC6807001E6162 /* Project object */;
+}
