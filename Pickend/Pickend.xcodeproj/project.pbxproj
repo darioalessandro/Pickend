@@ -21,6 +21,13 @@
 		877C753C14FC6807001E6162 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877C752114FC6807001E6162 /* CoreData.framework */; };
 		877C754414FC6807001E6162 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 877C754214FC6807001E6162 /* InfoPlist.strings */; };
 		877C754714FC6807001E6162 /* PickendTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 877C754614FC6807001E6162 /* PickendTests.m */; };
+		877C755814FC98CB001E6162 /* PKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 877C755714FC98CB001E6162 /* PKContext.m */; };
+		87C3203714FCA3FC0046E288 /* PKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C3203514FCA3FC0046E288 /* PKHomeViewController.m */; };
+		87C3203814FCA3FC0046E288 /* PKHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C3203614FCA3FC0046E288 /* PKHomeViewController.xib */; };
+		87C3203C14FCA92D0046E288 /* MockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C3203A14FCA92C0046E288 /* MockViewController.m */; };
+		87C3203D14FCA92D0046E288 /* MockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C3203B14FCA92C0046E288 /* MockViewController.xib */; };
+		87C3203F14FCAAA50046E288 /* PKMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C3203E14FCAAA50046E288 /* PKMenuView.xib */; };
+		87C3204214FCAD360046E288 /* PKMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C3204114FCAD360046E288 /* PKMenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +59,17 @@
 		877C754314FC6807001E6162 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		877C754514FC6807001E6162 /* PickendTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickendTests.h; sourceTree = "<group>"; };
 		877C754614FC6807001E6162 /* PickendTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickendTests.m; sourceTree = "<group>"; };
+		877C755614FC98CB001E6162 /* PKContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKContext.h; sourceTree = "<group>"; };
+		877C755714FC98CB001E6162 /* PKContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKContext.m; sourceTree = "<group>"; };
+		87C3203414FCA3FC0046E288 /* PKHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKHomeViewController.h; sourceTree = "<group>"; };
+		87C3203514FCA3FC0046E288 /* PKHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKHomeViewController.m; sourceTree = "<group>"; };
+		87C3203614FCA3FC0046E288 /* PKHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKHomeViewController.xib; sourceTree = "<group>"; };
+		87C3203914FCA92C0046E288 /* MockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockViewController.h; sourceTree = "<group>"; };
+		87C3203A14FCA92C0046E288 /* MockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockViewController.m; sourceTree = "<group>"; };
+		87C3203B14FCA92C0046E288 /* MockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MockViewController.xib; sourceTree = "<group>"; };
+		87C3203E14FCAAA50046E288 /* PKMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKMenuView.xib; sourceTree = "<group>"; };
+		87C3204014FCAD360046E288 /* PKMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKMenuView.h; sourceTree = "<group>"; };
+		87C3204114FCAD360046E288 /* PKMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKMenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +132,8 @@
 		877C752314FC6807001E6162 /* Pickend */ = {
 			isa = PBXGroup;
 			children = (
+				877C755914FCA35F001E6162 /* Controllers */,
+				877C755514FC9899001E6162 /* Model */,
 				877C752C14FC6807001E6162 /* PKAppDelegate.h */,
 				877C752D14FC6807001E6162 /* PKAppDelegate.m */,
 				877C752F14FC6807001E6162 /* Pickend.xcdatamodeld */,
@@ -150,6 +170,31 @@
 				877C754214FC6807001E6162 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		877C755514FC9899001E6162 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				877C755614FC98CB001E6162 /* PKContext.h */,
+				877C755714FC98CB001E6162 /* PKContext.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		877C755914FCA35F001E6162 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				87C3203414FCA3FC0046E288 /* PKHomeViewController.h */,
+				87C3203514FCA3FC0046E288 /* PKHomeViewController.m */,
+				87C3203614FCA3FC0046E288 /* PKHomeViewController.xib */,
+				87C3203914FCA92C0046E288 /* MockViewController.h */,
+				87C3203A14FCA92C0046E288 /* MockViewController.m */,
+				87C3203B14FCA92C0046E288 /* MockViewController.xib */,
+				87C3203E14FCAAA50046E288 /* PKMenuView.xib */,
+				87C3204014FCAD360046E288 /* PKMenuView.h */,
+				87C3204114FCAD360046E288 /* PKMenuView.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				877C752814FC6807001E6162 /* InfoPlist.strings in Resources */,
+				87C3203814FCA3FC0046E288 /* PKHomeViewController.xib in Resources */,
+				87C3203D14FCA92D0046E288 /* MockViewController.xib in Resources */,
+				87C3203F14FCAAA50046E288 /* PKMenuView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +308,10 @@
 				877C752A14FC6807001E6162 /* main.m in Sources */,
 				877C752E14FC6807001E6162 /* PKAppDelegate.m in Sources */,
 				877C753114FC6807001E6162 /* Pickend.xcdatamodeld in Sources */,
+				877C755814FC98CB001E6162 /* PKContext.m in Sources */,
+				87C3203714FCA3FC0046E288 /* PKHomeViewController.m in Sources */,
+				87C3203C14FCA92D0046E288 /* MockViewController.m in Sources */,
+				87C3204214FCAD360046E288 /* PKMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

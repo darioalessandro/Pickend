@@ -7,6 +7,8 @@
 //
 
 #import "PKAppDelegate.h"
+#import "PKHomeViewController.h"
+#import "MockViewController.h"
 
 @implementation PKAppDelegate
 
@@ -30,7 +32,37 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    PKHomeViewController * homeViewController= [PKHomeViewController new];// [PKHomeViewController alloc] init]
+    MockViewController * mockViewController= [MockViewController new];
+    
+    tabBarController= [UITabBarController new];
+    
+    NSArray * array= [NSArray arrayWithObjects:homeViewController,mockViewController, nil];
+    [tabBarController setViewControllers:array];                                    
+    
+    [self.window setRootViewController:tabBarController];
+    
+    //Ocultamos la barra
+    tabBarController.tabBar.hidden=TRUE;
+    NSArray * arregloDeObjetosDelNib= [[NSBundle mainBundle] loadNibNamed:@"PKMenuView" owner:nil options:nil];
+    UIView * view= (UIView *)[arregloDeObjetosDelNib objectAtIndex:0];
+    //Para salir de pedos, y no estar creando clases que ni vamos a usar, podemos agarrar las referencias a los botones, buscando dentro del view que cargamos del nib.
+    [self.window addSubview:view];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onPKMenuViewClick:) name:@"onMenuClick" object:nil];
     return YES;
+}
+
+-(void)onPKMenuViewClick:(NSNotification *)notif{
+    //name contiene el nombre del control que queremos mostrar.
+    NSString * name= [notif object];
+    if([name isEqualToString:@"mock"]){
+        [tabBarController setSelectedIndex:1];
+    }else if([name isEqualToString:@"home"]){
+        [tabBarController setSelectedIndex:0];
+    }else{
+        NSLog(@"indice no implementado!!!!!!!");
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

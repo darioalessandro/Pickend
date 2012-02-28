@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PKAppDelegate : UIResponder <UIApplicationDelegate>
+@interface PKAppDelegate : UIResponder <UIApplicationDelegate>{
+        UITabBarController * tabBarController;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
