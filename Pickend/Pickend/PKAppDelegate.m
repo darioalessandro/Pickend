@@ -8,6 +8,7 @@
 
 #import "PKAppDelegate.h"
 #import "MockViewController.h"
+#import "UINavigationBar+CustomLook.h"
 
 @implementation PKAppDelegate
 
@@ -32,12 +33,19 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-//    PKHomeViewController * homeViewController= [PKHomeViewController new];// [PKHomeViewController alloc] init]
+//  PKHomeViewController * homeViewController= [PKHomeViewController new];// [PKHomeViewController alloc] init]
+    
+
+    
     MockViewController * mockViewController= [MockViewController new];
+    [mockViewController setTitle:@"hay te encargo"];
+    UINavigationController * navController= [[UINavigationController alloc] initWithRootViewController:mockViewController];
+    UIImage * barImage= [[UIImage imageNamed: @"pattern.png"] stretchableImageWithLeftCapWidth:2 topCapHeight:2];
+    [[UINavigationBar appearance] setBackgroundImage:barImage  forBarMetrics:UIBarMetricsDefault];
     
     tabBarController= [UITabBarController new];
     
-    NSArray * array= [NSArray arrayWithObjects:mockViewController, nil];
+    NSArray * array= [NSArray arrayWithObjects:navController, nil];
     [tabBarController setViewControllers:array];                                    
     
     [self.window setRootViewController:tabBarController];
