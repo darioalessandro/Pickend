@@ -7,7 +7,6 @@
 //
 
 #import "PKAppDelegate.h"
-#import "PKHomeViewController.h"
 #import "MockViewController.h"
 
 @implementation PKAppDelegate
@@ -33,12 +32,12 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    PKHomeViewController * homeViewController= [PKHomeViewController new];// [PKHomeViewController alloc] init]
+//    PKHomeViewController * homeViewController= [PKHomeViewController new];// [PKHomeViewController alloc] init]
     MockViewController * mockViewController= [MockViewController new];
     
     tabBarController= [UITabBarController new];
     
-    NSArray * array= [NSArray arrayWithObjects:homeViewController,mockViewController, nil];
+    NSArray * array= [NSArray arrayWithObjects:mockViewController, nil];
     [tabBarController setViewControllers:array];                                    
     
     [self.window setRootViewController:tabBarController];
@@ -49,6 +48,9 @@
     UIView * view= (UIView *)[arregloDeObjetosDelNib objectAtIndex:0];
     //Para salir de pedos, y no estar creando clases que ni vamos a usar, podemos agarrar las referencias a los botones, buscando dentro del view que cargamos del nib.
     [self.window addSubview:view];
+    CGSize windowSize=self.window.frame.size;
+    CGSize frameSize=view.frame.size;
+    view.frame= CGRectMake(windowSize.width - frameSize.width, windowSize.height - frameSize.height, frameSize.width, frameSize.height);
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onPKMenuViewClick:) name:@"onMenuClick" object:nil];
     return YES;
 }

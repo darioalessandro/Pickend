@@ -11,6 +11,8 @@
 @interface PKMenuView : UIView{
 
 }
+- (IBAction)menuOnClick:(id)sender;
+@property (retain, nonatomic) IBOutlet UIView *buttonsContainer;
 
 - (IBAction)mockCallback:(id)sender;
 - (IBAction)home:(id)sender;

@@ -9,6 +9,7 @@
 #import "PKMenuView.h"
 
 @implementation PKMenuView
+@synthesize buttonsContainer;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -28,6 +29,16 @@
 }
 */
 
+- (IBAction)menuOnClick:(id)sender {
+    BOOL willHideButtons= !self.buttonsContainer.isHidden;
+    [[self buttonsContainer] setHidden:willHideButtons];
+    if(willHideButtons){
+        [sender setAlpha:0.7];
+    }else{
+        [sender setAlpha:1.0];        
+    }
+}
+
 - (IBAction)mockCallback:(id)sender {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"onMenuClick" object:@"mock"];
 }
@@ -36,4 +47,8 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"onMenuClick" object:@"home"];    
 }
 
+- (void)dealloc {
+    [buttonsContainer release];
+    [super dealloc];
+}
 @end
